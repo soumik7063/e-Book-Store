@@ -19,6 +19,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import Orders from "../pages/order";
 import ScrollToTopButton from "./ScrollToTopButton";
+import FaqPage from "../pages/FaqPage";
 
 export const RecoveryContext = createContext();
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Route exact path="/addBooks" element={<AddBooks />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route path="/my-orders" element={<Orders />} />
+          <Route path="/faq" element={<FaqPage />} />
         </Routes>
       </Router>
       <ScrollToTopButton/>
